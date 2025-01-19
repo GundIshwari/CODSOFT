@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage with Lottie Animation</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header>
+        <div class="email-row">
+            <img src="emailicon.gif" alt="Email Icon" class="icon">
+            <span>ishwarigund@gmail.com |</span>
+            <img src="Mobicon.gif" alt="Mob Icon" class="Micon">
+            <span>8329698585</span>
+        </div>
+        
+       
+    </header>
+
+    <nav>
+        <h1 style="color: black; padding-left: 20px; align-items: center; display: flex; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+            <img src="landingpage.webp" width="60px" height="60px" style="padding-left: 30px;">Landing Page</h1>
+        <div style="align-content:center; padding-left: 600px;">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!--Home page-->
+    <div class="container">
+        <div class="animation">
+            <div id="lottie-animation"></div>
+        </div>
+        <div class="text">
+            <p>
+                Welcome to our website! Here, we focus on delivering the best user experiences through 
+                interactive designs and animations. This is a demonstration of placing a Lottie animation 
+                alongside a text paragraph.
+            </p>
+        </div>
+    </div>
+
+    <!--About-->
+
+    <section class="container1" id="about">
+        <div class="container2">
+           
+            <div class="text1">
+                <h2 style="padding-left: 10px; position:absolute; padding-bottom: 200px;">About Us</h2>
+                <br><br>
+                <p style="position: relative;">We are passionate about creating user-friendly websites tailored to your needs.Creativity, collaboration, and impact – that’s what defines us. We are a team of passionate creators, thinkers, and doers working together to turn ideas into unforgettable experiences. From concept to execution, we’re here to inspire and deliver.</p>       
+
+            </div>
+            
+            <div class="animation1">
+                <div id="lottie-animation1"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container1" id="services">
+        <h2>Our Services</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Web Design</h3>
+                <p>Creative designs that captivate your audience.</p>
+            </div>
+            <div class="column">
+                <h3>Development</h3>
+                <p>Robust and scalable web solutions.</p>
+            </div>
+            <div class="column">
+                <h3>SEO</h3>
+                <p>Boost your online presence and visibility.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</footer>
+
+
+  <!-- Lottie Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.1/lottie.min.js"></script>
+  <script>
+    const animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://lottie.host/ebac0a16-970a-453f-80cc-a477d68b90a9/sWQbPDwuBC.json' // Replace with your Lottie JSON URL
+    });
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+  <script>
+     const animation1 = lottie.loadAnimation({
+      container: document.getElementById('lottie-animation1'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://lottie.host/374d196f-d677-4f53-b45c-0723b59c6a3f/0JjRuWTq9Q.json' // Replace with your Lottie JSON URL
+    });
+  </script>
+</body>
+</html>
+

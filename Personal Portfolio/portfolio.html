@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .achievement, .blog, .talk, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-links img {
+            width: 32px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Section 1: What I Do -->
+    <section>
+        <h1>What I Do</h1>
+        <p>CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
+        <ul>
+            <li>Develop highly interactive Front-end/User Interfaces for your web and mobile applications.</li>
+            <li>Progressive Web Applications (PWA) in normal and SPA Stacks.</li>
+            <li>Integration of third-party services such as Firebase, AWS, and Digital Ocean.</li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Skills -->
+    <section>
+        <h1>Skills</h1>
+        <div class="skills">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Firebase</div>
+            <div class="skill-item">AWS</div>
+        </div>
+    </section>
+
+    <!-- Section 3: Projects -->
+    <section>
+        <h1>Projects</h1>
+        <p>Check out some of my cool projects below:</p>
+        <ul>
+            <li><strong>Project 1:</strong> A social media app with real-time updates and notifications.</li>
+            <li><strong>Project 2:</strong> E-commerce platform with payment gateway integration.</li>
+            <li><strong>Project 3:</strong> Blog platform with user authentication and dynamic content.</li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-title">Achievements And Certifications 🏆</h2>
+        <div class="achievement">
+            <div class="card">
+                <img src="google-code-in-logo.png" alt="Google Code-in">
+                <div class="card-title">Google Code-In Finalist</div>
+                <div class="card-description">First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.</div>
+            </div>
+            <div class="card">
+                <img src="google-assistant-logo.png" alt="Google Assistant Action">
+                <div class="card-title">Google Assistant Action</div>
+                <div class="card-description">Developed a Google Assistant Action "JavaScript Guru" that is available on 2 Billion devices worldwide.</div>
+            </div>
+            <div class="card">
+                <img src="pwa-logo.png" alt="PWA Web App">
+                <div class="card-title">PWA Web App Developer</div>
+                <div class="card-description">Completed certification from SMIT for PWA Web App Development.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Blogs</h2>
+        <div class="blog">
+            <div class="card">
+                <div class="card-title">Win a Google Assistant T-shirt and $200 in Google Cloud Credits</div>
+                <div class="card-description">Do you want to win $200 and a Google Assistant T-shirt by creating a Google Assistant Action in less than 30 minutes?</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Why React is the Best?</div>
+                <div class="card-description">React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of developers and companies.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Talks</h2>
+        <div class="talk">
+            <div class="card">
+                <div class="card-title">Build Actions for Google Assistant</div>
+                <div class="card-description">Codelab at GDG DevFest Karachi 2019</div>
+                <a href="#">Slides</a> | <a href="#">Event</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Reach Out to Me!</h2>
+        <div class="contact">
+            <div class="card">
+                <div class="card-title">"First Pakistani Google Code-in Finalist 🇵🇰 | Software Developer 💻 | Open Source Contributor 🔥 | Speaker 🎙 | Tech Writer ✍️"</div>
+                <div class="card-description">Karachi, Pakistan<br>Open for opportunities: Yes</div>
+                <div class="social-links">
+                    <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="google-icon.png" alt="Google"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact Me -->
+    <section>
+        <h1>Contact Me</h1>
+        <p>Let's work together to build something great!</p>
+        <div class="contact">
+            <a href="mailto:yourname@example.com">Email Me</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+    </section>
+</body>
+</html>
+
